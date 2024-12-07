@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="170dp"
+    android:layout_height="150dp">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="5dp"
+        android:elevation="3dp"
+        app:cardBackgroundColor="#05000000"
+        app:cardCornerRadius="25dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/product_icon"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="5dp"
+            android:src="@drawable/small_placeholder" />
+
+        <TextView
+            android:id="@+id/product_icon_cloth_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ANAND NAME PLATE"
+            android:textStyle="bold"
+            android:textColor="#FFD700"
+            android:textSize="12sp"
+            android:layout_marginTop="26dp"
+            android:layout_gravity="center_horizontal"/>
+
+        <TextView
+            android:id="@+id/product_icon_ogh_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="आनंद नेम प्लेट"
+            android:layout_marginTop="24dp"
+            android:layout_gravity="center_horizontal"
+            android:textColor="@android:color/white"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/product_icon_oge_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ANAND NAME PLATE"
+            android:layout_marginTop="38dp"
+            android:textSize="12sp"
+            android:layout_gravity="center_horizontal"
+            android:textColor="@android:color/white"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/product_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="80dp"
+            android:paddingLeft="2.5dp"
+            android:paddingRight="2.5dp"
+            android:text="OG Dress Name Plate"
+            android:textColor="@android:color/black"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/product_rate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="100dp"
+            android:paddingLeft="2.5dp"
+            android:text="Rs. 30"
+            android:textColor="@android:color/black"
+            android:textSize="14sp" />
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>

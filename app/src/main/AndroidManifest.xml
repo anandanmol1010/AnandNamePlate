@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.shop.anandnameplate">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="true" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/cart"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/cart"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".viewAll"></activity>
+        <activity android:name=".pay" />
+        <activity android:name=".payment_methods" />
+        <activity
+            android:name=".cart"
+            android:parentActivityName=".main">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.shop.anandnameplate.cart" />
+        </activity>
+        <activity android:name=".Delivery" />
+        <activity
+            android:name=".ProductDetails"
+            android:parentActivityName=".main">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.shop.anandnameplate.main" />
+        </activity>
+        <activity android:name=".user_filling_details" />
+        <activity
+            android:name=".main"
+            android:label="@string/title_activity_main"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".notfound_otp" />
+        <activity android:name=".refer" />
+        <activity android:name=".found_otp" />
+        <activity android:name=".register">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
